@@ -1,0 +1,27 @@
+#########################################################################################
+# FanBeamModuleSide   --> # Z: +86 ~ 86+50 / 2
+#
+#####################################
+# 6) Create a volume to attach phasespace
+#####################################
+# XStart(Left) : -1-2
+# XEnd(LeftEnd) : -1-2-100
+# ZStart : 136 - 0.001
+# ZEnd : 136
+/gate/world/daughters/name 	bskdetector
+/gate/world/daughters/insert 	box
+/gate/bskdetector/geometry/setXLength 100 mm	
+/gate/bskdetector/geometry/setYLength 173 mm
+/gate/bskdetector/geometry/setZLength 0.001 mm	# 1 um Vacuum
+/gate/bskdetector/placement/setTranslation 	-53 0 135.9995 mm	
+/gate/bskdetector/setMaterial 		Vacuum
+/gate/bskdetector/vis/setColor cyan
+/gate/bskdetector/vis/forceSolid
+
+# REPEAT detector  # 6 mm gap + 100mm x
+/gate/bskdetector/repeaters/insert cubicArray
+/gate/bskdetector/cubicArray/setRepeatNumberX 	2
+/gate/bskdetector/cubicArray/setRepeatNumberY 	1
+/gate/bskdetector/cubicArray/setRepeatNumberZ   	1
+/gate/bskdetector/cubicArray/setRepeatVector 		106 0 0 mm
+/gate/bskdetector/cubicArray/autoCenter false
