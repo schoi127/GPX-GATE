@@ -1,0 +1,250 @@
+/gate/world/daughters/name phbkg
+/gate/world/daughters/insert box
+# FIVE Depth (140mm), Four materials(x4), Overlap (200mm)
+/gate/phbkg/geometry/setXLength 300 mm
+/gate/phbkg/geometry/setYLength 30 mm
+/gate/phbkg/geometry/setZLength 300 mm
+
+# Coordinate is a world, not a phantom
+# Phantom X Start:
+# -3+2 : fanbeam x edge left
+# Offset (scan start offset = -15 mm from the phantom center) --> phantom moves +15 (opposite direction)
+# (-3+2-(300/2)) ~ (-3+2+(300/2)) / 2 --> -151~149->-1
+
+/gate/phbkg/placement/setTranslation -1 0 291 mm	# ZStart (default) for 50mmH Grid -> 136+30 = 166,
+							# for 25 ODD, (166 - 30 + 5mm margin) ~ (166 - 30+5+300) / 2
+/gate/phbkg/setMaterial  Soil_d12			# Air, Soil, Soil_soft, Soil_soft_v3
+/gate/phbkg/vis/forceWireframe
+/gate/phbkg/vis/setColor magenta
+
+#######################################################################################################> Pos 1
+#======================================================== 0~10 mm depth
+/gate/phbkg/daughters/name slab_00
+/gate/phbkg/daughters/insert box
+/gate/slab_00/geometry/setXLength 300 mm
+/gate/slab_00/geometry/setYLength 30 mm
+/gate/slab_00/geometry/setZLength 10 mm	
+/gate/slab_00/placement/setTranslation 0 0 -145 mm  # Z: (-150+0) ~ (-150+0+10)/2
+/gate/slab_00/setMaterial 	Soil_d12	
+/gate/slab_00/vis/forceWireframe
+/gate/slab_00/vis/setColor white
+
+#======================================================== 10~20 mm depth
+/gate/phbkg/daughters/name slab_10
+/gate/phbkg/daughters/insert box
+/gate/slab_10/geometry/setXLength 300 mm
+/gate/slab_10/geometry/setYLength 30 mm
+/gate/slab_10/geometry/setZLength 10 mm	
+/gate/slab_10/placement/setTranslation 0 0 -135 mm  # Z: (-150+10) ~ (-150+10+10)/2
+/gate/slab_10/setMaterial 	Soil_d12	
+/gate/slab_10/vis/forceWireframe
+/gate/slab_10/vis/setColor green
+
+#======================================================== 20~30 mm depth
+/gate/phbkg/daughters/name slab_20
+/gate/phbkg/daughters/insert box
+/gate/slab_20/geometry/setXLength 300 mm
+/gate/slab_20/geometry/setYLength 30 mm
+/gate/slab_20/geometry/setZLength 10 mm	
+/gate/slab_20/placement/setTranslation 0 0 -125 mm  # Z: (-150+20) ~ (-150+20+10)/2
+/gate/slab_20/setMaterial 	Soil_d12	
+/gate/slab_20/vis/forceWireframe
+/gate/slab_20/vis/setColor grey
+
+#======================================================== 30~40 mm depth
+/gate/phbkg/daughters/name slab_30
+/gate/phbkg/daughters/insert box
+/gate/slab_30/geometry/setXLength 300 mm
+/gate/slab_30/geometry/setYLength 30 mm
+/gate/slab_30/geometry/setZLength 10 mm	
+/gate/slab_30/placement/setTranslation 0 0 -115 mm  # Z: (-150+30) ~ (-150+30+10)/2
+/gate/slab_30/setMaterial 	Soil_d12	
+/gate/slab_30/vis/forceWireframe
+/gate/slab_30/vis/setColor red
+
+#======================================================== 40~50 mm depth
+/gate/phbkg/daughters/name slab_40
+/gate/phbkg/daughters/insert box
+/gate/slab_40/geometry/setXLength 300 mm
+/gate/slab_40/geometry/setYLength 30 mm
+/gate/slab_40/geometry/setZLength 10 mm	
+/gate/slab_40/placement/setTranslation 0 0 -105 mm  # Z: (-150+40) ~ (-150+40+10)/2
+/gate/slab_40/setMaterial 	Soil_d12	
+/gate/slab_40/vis/forceWireframe
+/gate/slab_40/vis/setColor cyan
+
+#======================================================== 50~60 mm depth
+/gate/phbkg/daughters/name slab_50
+/gate/phbkg/daughters/insert box
+/gate/slab_50/geometry/setXLength 300 mm
+/gate/slab_50/geometry/setYLength 30 mm
+/gate/slab_50/geometry/setZLength 10 mm	
+/gate/slab_50/placement/setTranslation 0 0 -95 mm  # Z: (-150+50) ~ (-150+50+10)/2
+/gate/slab_50/setMaterial 	Soil_d12	
+/gate/slab_50/vis/forceWireframe
+/gate/slab_50/vis/setColor white
+
+#======================================================== 60~70 mm depth
+/gate/phbkg/daughters/name slab_60
+/gate/phbkg/daughters/insert box
+/gate/slab_60/geometry/setXLength 300 mm
+/gate/slab_60/geometry/setYLength 30 mm
+/gate/slab_60/geometry/setZLength 10 mm	
+/gate/slab_60/placement/setTranslation 0 0 -85 mm  # Z: (-150+60) ~ (-150+60+10)/2
+/gate/slab_60/setMaterial 	Soil_d12	
+/gate/slab_60/vis/forceWireframe
+/gate/slab_60/vis/setColor green
+
+#======================================================== 70~80 mm depth
+/gate/phbkg/daughters/name slab_70
+/gate/phbkg/daughters/insert box
+/gate/slab_70/geometry/setXLength 300 mm
+/gate/slab_70/geometry/setYLength 30 mm
+/gate/slab_70/geometry/setZLength 10 mm	
+/gate/slab_70/placement/setTranslation 0 0 -75 mm  # Z: (-150+70) ~ (-150+70+10)/2
+/gate/slab_70/setMaterial 	Soil_d12	
+/gate/slab_70/vis/forceWireframe
+/gate/slab_70/vis/setColor grey
+
+#======================================================== 80~90 mm depth
+/gate/phbkg/daughters/name slab_80
+/gate/phbkg/daughters/insert box
+/gate/slab_80/geometry/setXLength 300 mm
+/gate/slab_80/geometry/setYLength 30 mm
+/gate/slab_80/geometry/setZLength 10 mm	
+/gate/slab_80/placement/setTranslation 0 0 -65 mm  # Z: (-150+80) ~ (-150+80+10)/2
+/gate/slab_80/setMaterial 	Soil_d12	
+/gate/slab_80/vis/forceWireframe
+/gate/slab_80/vis/setColor red
+
+#======================================================== 90~100 mm depth
+/gate/phbkg/daughters/name slab_90
+/gate/phbkg/daughters/insert box
+/gate/slab_90/geometry/setXLength 300 mm
+/gate/slab_90/geometry/setYLength 30 mm
+/gate/slab_90/geometry/setZLength 10 mm	
+/gate/slab_90/placement/setTranslation 0 0 -55 mm  # Z: (-150+90) ~ (-150+90+10)/2
+/gate/slab_90/setMaterial 	Soil_d12	
+/gate/slab_90/vis/forceWireframe
+/gate/slab_90/vis/setColor cyan
+
+#======================================================== 100~110 mm depth
+/gate/phbkg/daughters/name slab_100
+/gate/phbkg/daughters/insert box
+/gate/slab_100/geometry/setXLength 300 mm
+/gate/slab_100/geometry/setYLength 30 mm
+/gate/slab_100/geometry/setZLength 10 mm	
+/gate/slab_100/placement/setTranslation 0 0 -45 mm  # Z: (-150+100) ~ (-150+100+10)/2
+/gate/slab_100/setMaterial 	Soil_d12	
+/gate/slab_100/vis/forceWireframe
+/gate/slab_100/vis/setColor white
+
+#======================================================== 110~120 mm depth
+/gate/phbkg/daughters/name slab_110
+/gate/phbkg/daughters/insert box
+/gate/slab_110/geometry/setXLength 300 mm
+/gate/slab_110/geometry/setYLength 30 mm
+/gate/slab_110/geometry/setZLength 10 mm	
+/gate/slab_110/placement/setTranslation 0 0 -35 mm  # Z: (-150+110) ~ (-150+110+10)/2
+/gate/slab_110/setMaterial 	Soil_d12	
+/gate/slab_110/vis/forceWireframe
+/gate/slab_110/vis/setColor green
+
+#======================================================== 120~130 mm depth
+/gate/phbkg/daughters/name slab_120
+/gate/phbkg/daughters/insert box
+/gate/slab_120/geometry/setXLength 300 mm
+/gate/slab_120/geometry/setYLength 30 mm
+/gate/slab_120/geometry/setZLength 10 mm	
+/gate/slab_120/placement/setTranslation 0 0 -25 mm  # Z: (-150+120) ~ (-150+120+10)/2
+/gate/slab_120/setMaterial 	Soil_d12	
+/gate/slab_120/vis/forceWireframe
+/gate/slab_120/vis/setColor grey
+
+#======================================================== 130~140 mm depth
+/gate/phbkg/daughters/name slab_130
+/gate/phbkg/daughters/insert box
+/gate/slab_130/geometry/setXLength 300 mm
+/gate/slab_130/geometry/setYLength 30 mm
+/gate/slab_130/geometry/setZLength 10 mm	
+/gate/slab_130/placement/setTranslation 0 0 -15 mm  # Z: (-150+130) ~ (-150+130+10)/2
+/gate/slab_130/setMaterial 	Soil_d12	
+/gate/slab_130/vis/forceWireframe
+/gate/slab_130/vis/setColor red
+
+#======================================================== 140~150 mm depth
+/gate/phbkg/daughters/name slab_140
+/gate/phbkg/daughters/insert box
+/gate/slab_140/geometry/setXLength 300 mm
+/gate/slab_140/geometry/setYLength 30 mm
+/gate/slab_140/geometry/setZLength 10 mm	
+/gate/slab_140/placement/setTranslation 0 0 -5 mm  # Z: (-150+140) ~ (-150+140+10)/2
+/gate/slab_140/setMaterial 	Soil_d12	
+/gate/slab_140/vis/forceWireframe
+/gate/slab_140/vis/setColor cyan
+
+#======================================================== 150~160 mm depth
+/gate/phbkg/daughters/name slab_150
+/gate/phbkg/daughters/insert box
+/gate/slab_150/geometry/setXLength 300 mm
+/gate/slab_150/geometry/setYLength 30 mm
+/gate/slab_150/geometry/setZLength 10 mm	
+/gate/slab_150/placement/setTranslation 0 0 5 mm  # Z: (-150+150) ~ (-150+150+10)/2
+/gate/slab_150/setMaterial 	Soil_d12	
+/gate/slab_150/vis/forceWireframe
+/gate/slab_150/vis/setColor white
+
+#======================================================== 160~170 mm depth
+/gate/phbkg/daughters/name slab_160
+/gate/phbkg/daughters/insert box
+/gate/slab_160/geometry/setXLength 300 mm
+/gate/slab_160/geometry/setYLength 30 mm
+/gate/slab_160/geometry/setZLength 10 mm	
+/gate/slab_160/placement/setTranslation 0 0 15 mm  # Z: (-150+160) ~ (-150+160+10)/2
+/gate/slab_160/setMaterial 	Soil_d12	
+/gate/slab_160/vis/forceWireframe
+/gate/slab_160/vis/setColor green
+
+#======================================================== 170~180 mm depth
+/gate/phbkg/daughters/name slab_170
+/gate/phbkg/daughters/insert box
+/gate/slab_170/geometry/setXLength 300 mm
+/gate/slab_170/geometry/setYLength 30 mm
+/gate/slab_170/geometry/setZLength 10 mm	
+/gate/slab_170/placement/setTranslation 0 0 25 mm  # Z: (-150+170) ~ (-150+170+10)/2
+/gate/slab_170/setMaterial 	Soil_d12	
+/gate/slab_170/vis/forceWireframe
+/gate/slab_170/vis/setColor grey
+
+#======================================================== 180~190 mm depth
+/gate/phbkg/daughters/name slab_180
+/gate/phbkg/daughters/insert box
+/gate/slab_180/geometry/setXLength 300 mm
+/gate/slab_180/geometry/setYLength 30 mm
+/gate/slab_180/geometry/setZLength 10 mm	
+/gate/slab_180/placement/setTranslation 0 0 35 mm  # Z: (-150+180) ~ (-150+180+10)/2
+/gate/slab_180/setMaterial 	Soil_d12	
+/gate/slab_180/vis/forceWireframe
+/gate/slab_180/vis/setColor red
+
+#======================================================== 190~200 mm depth
+/gate/phbkg/daughters/name slab_190
+/gate/phbkg/daughters/insert box
+/gate/slab_190/geometry/setXLength 300 mm
+/gate/slab_190/geometry/setYLength 30 mm
+/gate/slab_190/geometry/setZLength 10 mm	
+/gate/slab_190/placement/setTranslation 0 0 45 mm  # Z: (-150+190) ~ (-150+190+10)/2
+/gate/slab_190/setMaterial 	Soil_d12	
+/gate/slab_190/vis/forceWireframe
+/gate/slab_190/vis/setColor cyan
+
+#======================================================== rest depth
+/gate/phbkg/daughters/name slab_rest
+/gate/phbkg/daughters/insert box
+/gate/slab_rest/geometry/setXLength 300 mm
+/gate/slab_rest/geometry/setYLength 30 mm
+/gate/slab_rest/geometry/setZLength 100 mm	
+/gate/slab_rest/placement/setTranslation 0 0 100 mm  # Z: (-150+200) ~ (-150+200+100)/2
+/gate/slab_rest/setMaterial 	Soil_d12	
+/gate/slab_rest/vis/forceWireframe
+/gate/slab_rest/vis/setColor white

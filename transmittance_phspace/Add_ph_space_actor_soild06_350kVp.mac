@@ -1,0 +1,401 @@
+# slab_00, slab_10, slab_20, slab_30, slab_40, slab_50, 
+# slab_60, slab_70, slab_80, slab_90, slab_100, slab_rest
+/gate/actor/addActor PhaseSpaceActor              	ph_slab_00
+/gate/actor/ph_slab_00/save                       	output/soild06_exit_10mm_350kV_7e6.root
+/gate/actor/ph_slab_00/attachTo                   	slab_00
+/gate/actor/ph_slab_00/enableEkine                	true
+/gate/actor/ph_slab_00/enableXPosition            	true
+/gate/actor/ph_slab_00/enableYPosition            	true
+/gate/actor/ph_slab_00/enableZPosition            	true
+/gate/actor/ph_slab_00/enableXDirection           	true
+/gate/actor/ph_slab_00/enableYDirection           	true
+/gate/actor/ph_slab_00/enableZDirection           	true
+/gate/actor/ph_slab_00/enableProductionVolume     	true 
+/gate/actor/ph_slab_00/enableProductionProcess    	true
+/gate/actor/ph_slab_00/enableParticleName         	true
+/gate/actor/ph_slab_00/storeOutgoingParticles 	true
+/gate/actor/ph_slab_00/storeSecondaries 		true
+/gate/actor/ph_slab_00/enableWeight		   	false
+/gate/actor/ph_slab_00/enableTrackLength        	false
+#/gate/actor/ph_slab_00/setMaxFileSize 			100 MB 	# [Unit (B, kB, MB, GB)]
+
+/gate/actor/addActor PhaseSpaceActor              	ph_slab_10
+/gate/actor/ph_slab_10/save                       	output/soild06_exit_20mm_350kV_7e6.root
+/gate/actor/ph_slab_10/attachTo                   	slab_10
+/gate/actor/ph_slab_10/enableEkine                	true
+/gate/actor/ph_slab_10/enableXPosition            	true
+/gate/actor/ph_slab_10/enableYPosition            	true
+/gate/actor/ph_slab_10/enableZPosition            	true
+/gate/actor/ph_slab_10/enableXDirection           	true
+/gate/actor/ph_slab_10/enableYDirection           	true
+/gate/actor/ph_slab_10/enableZDirection           	true
+/gate/actor/ph_slab_10/enableProductionVolume     	true 
+/gate/actor/ph_slab_10/enableProductionProcess    	true
+/gate/actor/ph_slab_10/enableParticleName         	true
+/gate/actor/ph_slab_10/storeOutgoingParticles 	true
+/gate/actor/ph_slab_10/storeSecondaries 		true
+/gate/actor/ph_slab_10/enableWeight		   	false
+/gate/actor/ph_slab_10/enableTrackLength        	false
+#/gate/actor/ph_slab_10/setMaxFileSize 			100 MB 	# [Unit (B, kB, MB, GB)]
+
+/gate/actor/addActor PhaseSpaceActor              	ph_slab_20
+/gate/actor/ph_slab_20/save                       	output/soild06_exit_30mm_350kV_7e6.root
+/gate/actor/ph_slab_20/attachTo                   	slab_20
+/gate/actor/ph_slab_20/enableEkine                	true
+/gate/actor/ph_slab_20/enableXPosition            	true
+/gate/actor/ph_slab_20/enableYPosition            	true
+/gate/actor/ph_slab_20/enableZPosition            	true
+/gate/actor/ph_slab_20/enableXDirection           	true
+/gate/actor/ph_slab_20/enableYDirection           	true
+/gate/actor/ph_slab_20/enableZDirection           	true
+/gate/actor/ph_slab_20/enableProductionVolume     	true 
+/gate/actor/ph_slab_20/enableProductionProcess    	true
+/gate/actor/ph_slab_20/enableParticleName         	true
+/gate/actor/ph_slab_20/storeOutgoingParticles 	true
+/gate/actor/ph_slab_20/storeSecondaries 		true
+/gate/actor/ph_slab_20/enableWeight		   	false
+/gate/actor/ph_slab_20/enableTrackLength        	false
+#/gate/actor/ph_slab_20/setMaxFileSize 			100 MB 	# [Unit (B, kB, MB, GB)]
+
+/gate/actor/addActor PhaseSpaceActor              	ph_slab_30
+/gate/actor/ph_slab_30/save                       	output/soild06_exit_40mm_350kV_7e6.root
+/gate/actor/ph_slab_30/attachTo                   	slab_30
+/gate/actor/ph_slab_30/enableEkine                	true
+/gate/actor/ph_slab_30/enableXPosition            	true
+/gate/actor/ph_slab_30/enableYPosition            	true
+/gate/actor/ph_slab_30/enableZPosition            	true
+/gate/actor/ph_slab_30/enableXDirection           	true
+/gate/actor/ph_slab_30/enableYDirection           	true
+/gate/actor/ph_slab_30/enableZDirection           	true
+/gate/actor/ph_slab_30/enableProductionVolume     	true 
+/gate/actor/ph_slab_30/enableProductionProcess    	true
+/gate/actor/ph_slab_30/enableParticleName         	true
+/gate/actor/ph_slab_30/storeOutgoingParticles 	true
+/gate/actor/ph_slab_30/storeSecondaries 		true
+/gate/actor/ph_slab_30/enableWeight		   	false
+/gate/actor/ph_slab_30/enableTrackLength        	false
+#/gate/actor/ph_slab_30/setMaxFileSize 			100 MB 	# [Unit (B, kB, MB, GB)]
+
+/gate/actor/addActor PhaseSpaceActor              	ph_slab_40
+/gate/actor/ph_slab_40/save                       	output/soild06_exit_50mm_350kV_7e6.root
+/gate/actor/ph_slab_40/attachTo                   	slab_40
+/gate/actor/ph_slab_40/enableEkine                	true
+/gate/actor/ph_slab_40/enableXPosition            	true
+/gate/actor/ph_slab_40/enableYPosition            	true
+/gate/actor/ph_slab_40/enableZPosition            	true
+/gate/actor/ph_slab_40/enableXDirection           	true
+/gate/actor/ph_slab_40/enableYDirection           	true
+/gate/actor/ph_slab_40/enableZDirection           	true
+/gate/actor/ph_slab_40/enableProductionVolume     	true 
+/gate/actor/ph_slab_40/enableProductionProcess    	true
+/gate/actor/ph_slab_40/enableParticleName         	true
+/gate/actor/ph_slab_40/storeOutgoingParticles 	true
+/gate/actor/ph_slab_40/storeSecondaries 		true
+/gate/actor/ph_slab_40/enableWeight		   	false
+/gate/actor/ph_slab_40/enableTrackLength        	false
+#/gate/actor/ph_slab_40/setMaxFileSize 			100 MB 	# [Unit (B, kB, MB, GB)]
+
+/gate/actor/addActor PhaseSpaceActor              	ph_slab_50
+/gate/actor/ph_slab_50/save                       	output/soild06_exit_60mm_350kV_7e6.root
+/gate/actor/ph_slab_50/attachTo                   	slab_50
+/gate/actor/ph_slab_50/enableEkine                	true
+/gate/actor/ph_slab_50/enableXPosition            	true
+/gate/actor/ph_slab_50/enableYPosition            	true
+/gate/actor/ph_slab_50/enableZPosition            	true
+/gate/actor/ph_slab_50/enableXDirection           	true
+/gate/actor/ph_slab_50/enableYDirection           	true
+/gate/actor/ph_slab_50/enableZDirection           	true
+/gate/actor/ph_slab_50/enableProductionVolume     	true 
+/gate/actor/ph_slab_50/enableProductionProcess    	true
+/gate/actor/ph_slab_50/enableParticleName         	true
+/gate/actor/ph_slab_50/storeOutgoingParticles 	true
+/gate/actor/ph_slab_50/storeSecondaries 		true
+/gate/actor/ph_slab_50/enableWeight		   	false
+/gate/actor/ph_slab_50/enableTrackLength        	false
+#/gate/actor/ph_slab_50/setMaxFileSize 			100 MB 	# [Unit (B, kB, MB, GB)]
+
+/gate/actor/addActor PhaseSpaceActor              	ph_slab_60
+/gate/actor/ph_slab_60/save                       	output/soild06_exit_70mm_350kV_7e6.root
+/gate/actor/ph_slab_60/attachTo                   	slab_60
+/gate/actor/ph_slab_60/enableEkine                	true
+/gate/actor/ph_slab_60/enableXPosition            	true
+/gate/actor/ph_slab_60/enableYPosition            	true
+/gate/actor/ph_slab_60/enableZPosition            	true
+/gate/actor/ph_slab_60/enableXDirection           	true
+/gate/actor/ph_slab_60/enableYDirection           	true
+/gate/actor/ph_slab_60/enableZDirection           	true
+/gate/actor/ph_slab_60/enableProductionVolume     	true 
+/gate/actor/ph_slab_60/enableProductionProcess    	true
+/gate/actor/ph_slab_60/enableParticleName         	true
+/gate/actor/ph_slab_60/storeOutgoingParticles 	true
+/gate/actor/ph_slab_60/storeSecondaries 		true
+/gate/actor/ph_slab_60/enableWeight		   	false
+/gate/actor/ph_slab_60/enableTrackLength        	false
+#/gate/actor/ph_slab_60/setMaxFileSize 			100 MB 	# [Unit (B, kB, MB, GB)]
+
+/gate/actor/addActor PhaseSpaceActor              	ph_slab_70
+/gate/actor/ph_slab_70/save                       	output/soild06_exit_80mm_350kV_7e6.root
+/gate/actor/ph_slab_70/attachTo                   	slab_70
+/gate/actor/ph_slab_70/enableEkine                	true
+/gate/actor/ph_slab_70/enableXPosition            	true
+/gate/actor/ph_slab_70/enableYPosition            	true
+/gate/actor/ph_slab_70/enableZPosition            	true
+/gate/actor/ph_slab_70/enableXDirection           	true
+/gate/actor/ph_slab_70/enableYDirection           	true
+/gate/actor/ph_slab_70/enableZDirection           	true
+/gate/actor/ph_slab_70/enableProductionVolume     	true 
+/gate/actor/ph_slab_70/enableProductionProcess    	true
+/gate/actor/ph_slab_70/enableParticleName         	true
+/gate/actor/ph_slab_70/storeOutgoingParticles 	true
+/gate/actor/ph_slab_70/storeSecondaries 		true
+/gate/actor/ph_slab_70/enableWeight		   	false
+/gate/actor/ph_slab_70/enableTrackLength        	false
+#/gate/actor/ph_slab_70/setMaxFileSize 			100 MB 	# [Unit (B, kB, MB, GB)]
+
+/gate/actor/addActor PhaseSpaceActor              	ph_slab_80
+/gate/actor/ph_slab_80/save                       	output/soild06_exit_90mm_350kV_7e6.root
+/gate/actor/ph_slab_80/attachTo                   	slab_80
+/gate/actor/ph_slab_80/enableEkine                	true
+/gate/actor/ph_slab_80/enableXPosition            	true
+/gate/actor/ph_slab_80/enableYPosition            	true
+/gate/actor/ph_slab_80/enableZPosition            	true
+/gate/actor/ph_slab_80/enableXDirection           	true
+/gate/actor/ph_slab_80/enableYDirection           	true
+/gate/actor/ph_slab_80/enableZDirection           	true
+/gate/actor/ph_slab_80/enableProductionVolume     	true 
+/gate/actor/ph_slab_80/enableProductionProcess    	true
+/gate/actor/ph_slab_80/enableParticleName         	true
+/gate/actor/ph_slab_80/storeOutgoingParticles 	true
+/gate/actor/ph_slab_80/storeSecondaries 		true
+/gate/actor/ph_slab_80/enableWeight		   	false
+/gate/actor/ph_slab_80/enableTrackLength        	false
+#/gate/actor/ph_slab_80/setMaxFileSize 			100 MB 	# [Unit (B, kB, MB, GB)]
+
+/gate/actor/addActor PhaseSpaceActor              	ph_slab_90
+/gate/actor/ph_slab_90/save                       	output/soild06_exit_100mm_350kV_7e6.root
+/gate/actor/ph_slab_90/attachTo                   	slab_90
+/gate/actor/ph_slab_90/enableEkine                	true
+/gate/actor/ph_slab_90/enableXPosition            	true
+/gate/actor/ph_slab_90/enableYPosition            	true
+/gate/actor/ph_slab_90/enableZPosition            	true
+/gate/actor/ph_slab_90/enableXDirection           	true
+/gate/actor/ph_slab_90/enableYDirection           	true
+/gate/actor/ph_slab_90/enableZDirection           	true
+/gate/actor/ph_slab_90/enableProductionVolume     	true 
+/gate/actor/ph_slab_90/enableProductionProcess    	true
+/gate/actor/ph_slab_90/enableParticleName         	true
+/gate/actor/ph_slab_90/storeOutgoingParticles 	true
+/gate/actor/ph_slab_90/storeSecondaries 		true
+/gate/actor/ph_slab_90/enableWeight		   	false
+/gate/actor/ph_slab_90/enableTrackLength        	false
+#/gate/actor/ph_slab_90/setMaxFileSize 			100 MB 	# [Unit (B, kB, MB, GB)]
+
+/gate/actor/addActor PhaseSpaceActor              	ph_slab_100
+/gate/actor/ph_slab_100/save                       	output/soild06_exit_110mm_350kV_7e6.root
+/gate/actor/ph_slab_100/attachTo                   	slab_100
+/gate/actor/ph_slab_100/enableEkine                	true
+/gate/actor/ph_slab_100/enableXPosition            	true
+/gate/actor/ph_slab_100/enableYPosition            	true
+/gate/actor/ph_slab_100/enableZPosition            	true
+/gate/actor/ph_slab_100/enableXDirection           	true
+/gate/actor/ph_slab_100/enableYDirection           	true
+/gate/actor/ph_slab_100/enableZDirection           	true
+/gate/actor/ph_slab_100/enableProductionVolume     	true 
+/gate/actor/ph_slab_100/enableProductionProcess    	true
+/gate/actor/ph_slab_100/enableParticleName         	true
+/gate/actor/ph_slab_100/storeOutgoingParticles 	true
+/gate/actor/ph_slab_100/storeSecondaries 		true
+/gate/actor/ph_slab_100/enableWeight		   	false
+/gate/actor/ph_slab_100/enableTrackLength        	false
+#/gate/actor/ph_slab_100/setMaxFileSize 			100 MB 	# [Unit (B, kB, MB, GB)]
+
+/gate/actor/addActor PhaseSpaceActor              	ph_slab_110
+/gate/actor/ph_slab_110/save                       	output/soild06_exit_120mm_350kV_7e6.root
+/gate/actor/ph_slab_110/attachTo                   	slab_110
+/gate/actor/ph_slab_110/enableEkine                	true
+/gate/actor/ph_slab_110/enableXPosition            	true
+/gate/actor/ph_slab_110/enableYPosition            	true
+/gate/actor/ph_slab_110/enableZPosition            	true
+/gate/actor/ph_slab_110/enableXDirection           	true
+/gate/actor/ph_slab_110/enableYDirection           	true
+/gate/actor/ph_slab_110/enableZDirection           	true
+/gate/actor/ph_slab_110/enableProductionVolume     	true 
+/gate/actor/ph_slab_110/enableProductionProcess    	true
+/gate/actor/ph_slab_110/enableParticleName         	true
+/gate/actor/ph_slab_110/storeOutgoingParticles 	true
+/gate/actor/ph_slab_110/storeSecondaries 		true
+/gate/actor/ph_slab_110/enableWeight		   	false
+/gate/actor/ph_slab_110/enableTrackLength        	false
+#/gate/actor/ph_slab_110/setMaxFileSize 			100 MB 	# [Unit (B, kB, MB, GB)]
+
+/gate/actor/addActor PhaseSpaceActor              	ph_slab_120
+/gate/actor/ph_slab_120/save                       	output/soild06_exit_130mm_350kV_7e6.root
+/gate/actor/ph_slab_120/attachTo                   	slab_120
+/gate/actor/ph_slab_120/enableEkine                	true
+/gate/actor/ph_slab_120/enableXPosition            	true
+/gate/actor/ph_slab_120/enableYPosition            	true
+/gate/actor/ph_slab_120/enableZPosition            	true
+/gate/actor/ph_slab_120/enableXDirection           	true
+/gate/actor/ph_slab_120/enableYDirection           	true
+/gate/actor/ph_slab_120/enableZDirection           	true
+/gate/actor/ph_slab_120/enableProductionVolume     	true 
+/gate/actor/ph_slab_120/enableProductionProcess    	true
+/gate/actor/ph_slab_120/enableParticleName         	true
+/gate/actor/ph_slab_120/storeOutgoingParticles 	true
+/gate/actor/ph_slab_120/storeSecondaries 		true
+/gate/actor/ph_slab_120/enableWeight		   	false
+/gate/actor/ph_slab_120/enableTrackLength        	false
+#/gate/actor/ph_slab_120/setMaxFileSize 			100 MB 	# [Unit (B, kB, MB, GB)]
+
+/gate/actor/addActor PhaseSpaceActor              	ph_slab_130
+/gate/actor/ph_slab_130/save                       	output/soild06_exit_140mm_350kV_7e6.root
+/gate/actor/ph_slab_130/attachTo                   	slab_130
+/gate/actor/ph_slab_130/enableEkine                	true
+/gate/actor/ph_slab_130/enableXPosition            	true
+/gate/actor/ph_slab_130/enableYPosition            	true
+/gate/actor/ph_slab_130/enableZPosition            	true
+/gate/actor/ph_slab_130/enableXDirection           	true
+/gate/actor/ph_slab_130/enableYDirection           	true
+/gate/actor/ph_slab_130/enableZDirection           	true
+/gate/actor/ph_slab_130/enableProductionVolume     	true 
+/gate/actor/ph_slab_130/enableProductionProcess    	true
+/gate/actor/ph_slab_130/enableParticleName         	true
+/gate/actor/ph_slab_130/storeOutgoingParticles 	true
+/gate/actor/ph_slab_130/storeSecondaries 		true
+/gate/actor/ph_slab_130/enableWeight		   	false
+/gate/actor/ph_slab_130/enableTrackLength        	false
+#/gate/actor/ph_slab_130/setMaxFileSize 			100 MB 	# [Unit (B, kB, MB, GB)]
+
+/gate/actor/addActor PhaseSpaceActor              	ph_slab_140
+/gate/actor/ph_slab_140/save                       	output/soild06_exit_150mm_350kV_7e6.root
+/gate/actor/ph_slab_140/attachTo                   	slab_140
+/gate/actor/ph_slab_140/enableEkine                	true
+/gate/actor/ph_slab_140/enableXPosition            	true
+/gate/actor/ph_slab_140/enableYPosition            	true
+/gate/actor/ph_slab_140/enableZPosition            	true
+/gate/actor/ph_slab_140/enableXDirection           	true
+/gate/actor/ph_slab_140/enableYDirection           	true
+/gate/actor/ph_slab_140/enableZDirection           	true
+/gate/actor/ph_slab_140/enableProductionVolume     	true 
+/gate/actor/ph_slab_140/enableProductionProcess    	true
+/gate/actor/ph_slab_140/enableParticleName         	true
+/gate/actor/ph_slab_140/storeOutgoingParticles 	true
+/gate/actor/ph_slab_140/storeSecondaries 		true
+/gate/actor/ph_slab_140/enableWeight		   	false
+/gate/actor/ph_slab_140/enableTrackLength        	false
+#/gate/actor/ph_slab_140/setMaxFileSize 			100 MB 	# [Unit (B, kB, MB, GB)]
+
+/gate/actor/addActor PhaseSpaceActor              	ph_slab_150
+/gate/actor/ph_slab_150/save                       	output/soild06_exit_160mm_350kV_7e6.root
+/gate/actor/ph_slab_150/attachTo                   	slab_150
+/gate/actor/ph_slab_150/enableEkine                	true
+/gate/actor/ph_slab_150/enableXPosition            	true
+/gate/actor/ph_slab_150/enableYPosition            	true
+/gate/actor/ph_slab_150/enableZPosition            	true
+/gate/actor/ph_slab_150/enableXDirection           	true
+/gate/actor/ph_slab_150/enableYDirection           	true
+/gate/actor/ph_slab_150/enableZDirection           	true
+/gate/actor/ph_slab_150/enableProductionVolume     	true 
+/gate/actor/ph_slab_150/enableProductionProcess    	true
+/gate/actor/ph_slab_150/enableParticleName         	true
+/gate/actor/ph_slab_150/storeOutgoingParticles 	true
+/gate/actor/ph_slab_150/storeSecondaries 		true
+/gate/actor/ph_slab_150/enableWeight		   	false
+/gate/actor/ph_slab_150/enableTrackLength        	false
+#/gate/actor/ph_slab_150/setMaxFileSize 			100 MB 	# [Unit (B, kB, MB, GB)]
+
+/gate/actor/addActor PhaseSpaceActor              	ph_slab_160
+/gate/actor/ph_slab_160/save                       	output/soild06_exit_170mm_350kV_7e6.root
+/gate/actor/ph_slab_160/attachTo                   	slab_160
+/gate/actor/ph_slab_160/enableEkine                	true
+/gate/actor/ph_slab_160/enableXPosition            	true
+/gate/actor/ph_slab_160/enableYPosition            	true
+/gate/actor/ph_slab_160/enableZPosition            	true
+/gate/actor/ph_slab_160/enableXDirection           	true
+/gate/actor/ph_slab_160/enableYDirection           	true
+/gate/actor/ph_slab_160/enableZDirection           	true
+/gate/actor/ph_slab_160/enableProductionVolume     	true 
+/gate/actor/ph_slab_160/enableProductionProcess    	true
+/gate/actor/ph_slab_160/enableParticleName         	true
+/gate/actor/ph_slab_160/storeOutgoingParticles 	true
+/gate/actor/ph_slab_160/storeSecondaries 		true
+/gate/actor/ph_slab_160/enableWeight		   	false
+/gate/actor/ph_slab_160/enableTrackLength        	false
+#/gate/actor/ph_slab_160/setMaxFileSize 			100 MB 	# [Unit (B, kB, MB, GB)]
+
+/gate/actor/addActor PhaseSpaceActor              	ph_slab_170
+/gate/actor/ph_slab_170/save                       	output/soild06_exit_180mm_350kV_7e6.root
+/gate/actor/ph_slab_170/attachTo                   	slab_170
+/gate/actor/ph_slab_170/enableEkine                	true
+/gate/actor/ph_slab_170/enableXPosition            	true
+/gate/actor/ph_slab_170/enableYPosition            	true
+/gate/actor/ph_slab_170/enableZPosition            	true
+/gate/actor/ph_slab_170/enableXDirection           	true
+/gate/actor/ph_slab_170/enableYDirection           	true
+/gate/actor/ph_slab_170/enableZDirection           	true
+/gate/actor/ph_slab_170/enableProductionVolume     	true 
+/gate/actor/ph_slab_170/enableProductionProcess    	true
+/gate/actor/ph_slab_170/enableParticleName         	true
+/gate/actor/ph_slab_170/storeOutgoingParticles 	true
+/gate/actor/ph_slab_170/storeSecondaries 		true
+/gate/actor/ph_slab_170/enableWeight		   	false
+/gate/actor/ph_slab_170/enableTrackLength        	false
+#/gate/actor/ph_slab_170/setMaxFileSize 			100 MB 	# [Unit (B, kB, MB, GB)]
+
+/gate/actor/addActor PhaseSpaceActor              	ph_slab_180
+/gate/actor/ph_slab_180/save                       	output/soild06_exit_190mm_350kV_7e6.root
+/gate/actor/ph_slab_180/attachTo                   	slab_180
+/gate/actor/ph_slab_180/enableEkine                	true
+/gate/actor/ph_slab_180/enableXPosition            	true
+/gate/actor/ph_slab_180/enableYPosition            	true
+/gate/actor/ph_slab_180/enableZPosition            	true
+/gate/actor/ph_slab_180/enableXDirection           	true
+/gate/actor/ph_slab_180/enableYDirection           	true
+/gate/actor/ph_slab_180/enableZDirection           	true
+/gate/actor/ph_slab_180/enableProductionVolume     	true 
+/gate/actor/ph_slab_180/enableProductionProcess    	true
+/gate/actor/ph_slab_180/enableParticleName         	true
+/gate/actor/ph_slab_180/storeOutgoingParticles 	true
+/gate/actor/ph_slab_180/storeSecondaries 		true
+/gate/actor/ph_slab_180/enableWeight		   	false
+/gate/actor/ph_slab_180/enableTrackLength        	false
+#/gate/actor/ph_slab_180/setMaxFileSize 			100 MB 	# [Unit (B, kB, MB, GB)]
+
+/gate/actor/addActor PhaseSpaceActor              	ph_slab_190
+/gate/actor/ph_slab_190/save                       	output/soild06_exit_200mm_350kV_7e6.root
+/gate/actor/ph_slab_190/attachTo                   	slab_190
+/gate/actor/ph_slab_190/enableEkine                	true
+/gate/actor/ph_slab_190/enableXPosition            	true
+/gate/actor/ph_slab_190/enableYPosition            	true
+/gate/actor/ph_slab_190/enableZPosition            	true
+/gate/actor/ph_slab_190/enableXDirection           	true
+/gate/actor/ph_slab_190/enableYDirection           	true
+/gate/actor/ph_slab_190/enableZDirection           	true
+/gate/actor/ph_slab_190/enableProductionVolume     	true 
+/gate/actor/ph_slab_190/enableProductionProcess    	true
+/gate/actor/ph_slab_190/enableParticleName         	true
+/gate/actor/ph_slab_190/storeOutgoingParticles 	true
+/gate/actor/ph_slab_190/storeSecondaries 		true
+/gate/actor/ph_slab_190/enableWeight		   	false
+/gate/actor/ph_slab_190/enableTrackLength        	false
+#/gate/actor/ph_slab_190/setMaxFileSize 			100 MB 	# [Unit (B, kB, MB, GB)]
+
+/gate/actor/addActor PhaseSpaceActor              	ph_slab_rest
+/gate/actor/ph_slab_rest/save                       	output/soild06_exit_rest_350kV_7e6.root
+/gate/actor/ph_slab_rest/attachTo                   	slab_rest
+/gate/actor/ph_slab_rest/enableEkine                	true
+/gate/actor/ph_slab_rest/enableXPosition            	true
+/gate/actor/ph_slab_rest/enableYPosition            	true
+/gate/actor/ph_slab_rest/enableZPosition            	true
+/gate/actor/ph_slab_rest/enableXDirection           	true
+/gate/actor/ph_slab_rest/enableYDirection           	true
+/gate/actor/ph_slab_rest/enableZDirection           	true
+/gate/actor/ph_slab_rest/enableProductionVolume     	true 
+/gate/actor/ph_slab_rest/enableProductionProcess    	true
+/gate/actor/ph_slab_rest/enableParticleName         	true
+/gate/actor/ph_slab_rest/storeOutgoingParticles 	true
+/gate/actor/ph_slab_rest/storeSecondaries 		true
+/gate/actor/ph_slab_rest/enableWeight		   	false
+/gate/actor/ph_slab_rest/enableTrackLength        	false
+#/gate/actor/ph_slab_rest/setMaxFileSize 			100 MB 	# [Unit (B, kB, MB, GB)]
+
