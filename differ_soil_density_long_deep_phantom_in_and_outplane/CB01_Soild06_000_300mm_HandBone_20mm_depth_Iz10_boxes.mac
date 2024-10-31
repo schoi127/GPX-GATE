@@ -1,0 +1,59 @@
+/gate/world/daughters/name phbkg
+/gate/world/daughters/insert box
+/gate/phbkg/geometry/setXLength 140 mm
+/gate/phbkg/geometry/setYLength 30 mm
+/gate/phbkg/geometry/setZLength 300 mm
+
+# Coordinate is a world, not a phantom
+# Phantom X Start:
+# -3+2 : fanbeam x edge left
+# Offset (scan start offset = -15 mm from the phantom center) --> phantom moves +15 (opposite direction)
+# (-3+2+15-140/2) ~ (-3+2+15-140/2 + 140)
+# 14
+
+/gate/phbkg/placement/setTranslation 14 0 321 mm	# ZStart (default) for 50mmH Grid -> 136+30 = 166, 166+5+0~166+5+70
+							# (166 + 5mm margin) ~ (166+5+300) / 2
+/gate/phbkg/setMaterial  Soil_d06			# Air, Soil, Soil_soft, Soil_soft_v3
+/gate/phbkg/vis/forceWireframe
+/gate/phbkg/vis/setColor grey
+
+
+# From here, Coordinate is a phantom, not a world
+#######################################################################################################> Pos 1
+#======================================================== 40~50 mm depth
+/gate/phbkg/daughters/name target_40
+/gate/phbkg/daughters/insert box
+/gate/target_40/geometry/setXLength 10 mm
+/gate/target_40/geometry/setYLength 10 mm
+/gate/target_40/geometry/setZLength 10 mm	
+/gate/target_40/placement/setTranslation -20 0 -105 mm  # Z: (-150+40) ~ (-150+40+10)/2
+							# X: -50~-40/2
+/gate/target_40/setMaterial Hand_bones_spongiosa		# Hand_bones_spongiosa, Femora_sponsisa, CorticalBone, Polyethylene
+/gate/target_40/vis/forceSolid
+/gate/target_40/vis/setColor white
+
+
+
+#======================================================== 20~30 mm depth  ==> upper foreign insert
+/gate/phbkg/daughters/name fi_box_up
+/gate/phbkg/daughters/insert box
+/gate/fi_box_up/geometry/setXLength 10 mm
+/gate/fi_box_up/geometry/setYLength 10 mm
+/gate/fi_box_up/geometry/setZLength 10 mm	
+/gate/fi_box_up/placement/setTranslation -45 0 -125 mm  # Z: (-150+20) ~ (-150+20+10)/2
+							# X: -50~-40/2
+/gate/fi_box_up/setMaterial Rock		# Hand_bones_spongiosa, Femora_sponsisa, CorticalBone, Polyethylene
+/gate/fi_box_up/vis/forceSolid
+/gate/fi_box_up/vis/setColor blue
+
+#======================================================== 60~70 mm depth  ==> upper foreign insert
+/gate/phbkg/daughters/name fi_box_bottom
+/gate/phbkg/daughters/insert box
+/gate/fi_box_bottom/geometry/setXLength 10 mm
+/gate/fi_box_bottom/geometry/setYLength 10 mm
+/gate/fi_box_bottom/geometry/setZLength 10 mm
+/gate/fi_box_bottom/placement/setTranslation 5 0 -85 mm  # Z: (-150+60) ~ (-150+60+10)/2
+							# X: -50~-40/2
+/gate/fi_box_bottom/setMaterial Rock		# Hand_bones_spongiosa, Femora_sponsisa, CorticalBone, Polyethylene
+/gate/fi_box_bottom/vis/forceSolid
+/gate/fi_box_bottom/vis/setColor blue

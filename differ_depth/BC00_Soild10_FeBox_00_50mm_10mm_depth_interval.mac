@@ -1,0 +1,79 @@
+/gate/world/daughters/name phbkg
+/gate/world/daughters/insert box
+/gate/phbkg/geometry/setXLength 140 mm
+/gate/phbkg/geometry/setYLength 30 mm
+/gate/phbkg/geometry/setZLength 70 mm
+
+# Phantom X Start:
+# -3+2 : fanbeam x edge left
+# (-3+2 + 10(offset to scan from the middle)) ~ (-3+2 + Width)
+# (-1-10 ~ -1-10+140)/2 = 59
+
+/gate/phbkg/placement/setTranslation 59 0 206 mm	# ZStart (default) for 50mmH Grid -> 136+30 = 166, 166+5+0~166+5+70
+							# (166 + 5mm margin) ~ (166+5+70) / 2
+/gate/phbkg/setMaterial  Soil_d10			# Air, Soil, Soil_soft, Soil_soft_v3
+/gate/phbkg/vis/forceWireframe
+/gate/phbkg/vis/setColor grey
+
+
+#######################################################################################################> Pos 1
+#======================================================== 0~10 mm depth 
+/gate/phbkg/daughters/name block_box_0
+/gate/phbkg/daughters/insert box
+/gate/block_box_0/geometry/setXLength 10 mm
+/gate/block_box_0/geometry/setYLength 10 mm
+/gate/block_box_0/geometry/setZLength 10 mm	
+/gate/block_box_0/placement/setTranslation -45 0 -30 mm  # Z: (-35+0) ~ (-35+0+10)/2
+							# X: -50~-40/2
+/gate/block_box_0/setMaterial FeOxide		# Hand_bones_spongiosa, Femora_sponsisa, CorticalBone, Polyethylene
+/gate/block_box_0/vis/forceSolid
+/gate/block_box_0/vis/setColor white
+
+#======================================================== 10~20 mm depth 
+/gate/phbkg/daughters/name block_box_5
+/gate/phbkg/daughters/insert box
+/gate/block_box_5/geometry/setXLength 10 mm
+/gate/block_box_5/geometry/setYLength 10 mm
+/gate/block_box_5/geometry/setZLength 10 mm	
+/gate/block_box_5/placement/setTranslation -25 0 -20 mm  # Z: (-35+10) ~ (-35+10+10)/2
+							# X: (-25 + 10) ~ -25+10+10 = 
+/gate/block_box_5/setMaterial FeOxide		# Hand_bones_spongiosa, Femora_sponsisa, CorticalBone, Polyethylene
+/gate/block_box_5/vis/forceSolid
+/gate/block_box_5/vis/setColor white
+
+#======================================================== 20~30 mm depth 
+/gate/phbkg/daughters/name block_box_10
+/gate/phbkg/daughters/insert box
+/gate/block_box_10/geometry/setXLength 10 mm
+/gate/block_box_10/geometry/setYLength 10 mm
+/gate/block_box_10/geometry/setZLength 10 mm	
+/gate/block_box_10/placement/setTranslation -5 0 -10 mm  # Z: (-35+20) ~ (-35+20+10)/2
+							# X: (-25+10+10 + 10(offset)) ~ 10 plus = 
+/gate/block_box_10/setMaterial FeOxide		# Hand_bones_spongiosa, Femora_sponsisa, CorticalBone, Polyethylene
+/gate/block_box_10/vis/forceSolid
+/gate/block_box_10/vis/setColor white
+
+#======================================================== 30~40 mm depth 
+/gate/phbkg/daughters/name block_box_15
+/gate/phbkg/daughters/insert box
+/gate/block_box_15/geometry/setXLength 10 mm
+/gate/block_box_15/geometry/setYLength 10 mm
+/gate/block_box_15/geometry/setZLength 10 mm	
+/gate/block_box_15/placement/setTranslation 15 0 0 mm  # Z: (-35+0) ~ (-35+0+10)/2
+							# X: (-25+10+10+10+10+10(offset)) ~ 10 plus = 
+/gate/block_box_15/setMaterial FeOxide		# Hand_bones_spongiosa, Femora_sponsisa, CorticalBone, Polyethylene
+/gate/block_box_15/vis/forceSolid
+/gate/block_box_15/vis/setColor white
+
+#======================================================== 40~50 mm depth 
+/gate/phbkg/daughters/name block_box_20
+/gate/phbkg/daughters/insert box
+/gate/block_box_20/geometry/setXLength 10 mm
+/gate/block_box_20/geometry/setYLength 10 mm
+/gate/block_box_20/geometry/setZLength 10 mm	
+/gate/block_box_20/placement/setTranslation 35 0 10 mm  # Z: (-35+0) ~ (-35+0+10)/2
+							# X: (-25+10+10+10+10+10(offset)) ~ 10 plus = 
+/gate/block_box_20/setMaterial FeOxide		# Hand_bones_spongiosa, Femora_sponsisa, CorticalBone, Polyethylene
+/gate/block_box_20/vis/forceSolid
+/gate/block_box_20/vis/setColor white
+
