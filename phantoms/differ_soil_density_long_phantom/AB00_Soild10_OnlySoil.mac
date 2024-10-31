@@ -1,0 +1,18 @@
+/gate/world/daughters/name phbkg
+/gate/world/daughters/insert box
+/gate/phbkg/geometry/setXLength 140 mm
+/gate/phbkg/geometry/setYLength 30 mm
+/gate/phbkg/geometry/setZLength 70 mm
+
+# Coordinate is a world, not a phantom
+# Phantom X Start:
+# -3+2 : fanbeam x edge left
+# Offset (scan start offset = -15 mm from the phantom center)
+# (-3+2-15-140/2) ~ (-3+2-15-140/2 + 140)
+# -16
+
+/gate/phbkg/placement/setTranslation -16 0 206 mm	# ZStart (default) for 50mmH Grid -> 136+30 = 166, 166+5+0~166+5+70
+							# (166 + 5mm margin) ~ (166+5+70) / 2
+/gate/phbkg/setMaterial  Soil_d10			# Air, Soil, Soil_soft, Soil_soft_v3
+/gate/phbkg/vis/forceWireframe
+/gate/phbkg/vis/setColor grey
