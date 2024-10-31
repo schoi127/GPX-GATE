@@ -1,0 +1,102 @@
+#########################################################################################
+####################################
+# 1) Create module among world
+####################################
+/gate/world/daughters/name FanBeamModuleUp
+/gate/world/daughters/insert box
+/gate/FanBeamModuleUp/geometry/setXLength 246 mm	# (122+122) + (2mm slit)
+/gate/FanBeamModuleUp/geometry/setYLength 173 mm
+/gate/FanBeamModuleUp/geometry/setZLength 86 mm		# 8 mm coll z + 78 mm sourcez
+/gate/FanBeamModuleUp/placement/setTranslation 	0 0 43 mm  	# add halfz (b/c source is always 0,0,0)
+/gate/FanBeamModuleUp/setMaterial 	Air
+/gate/FanBeamModuleUp/vis/setColor white
+/gate/FanBeamModuleUp/vis/forceWireframe
+
+#####################################
+# 2) Make bottom Collimator 
+#####################################
+/gate/FanBeamModuleUp/daughters/name 	CollB
+/gate/FanBeamModuleUp/daughters/insert 	box
+/gate/CollB/geometry/setXLength 122 mm	# (122+122) + (2mm slit)
+/gate/CollB/geometry/setYLength 173 mm
+/gate/CollB/geometry/setZLength 8 mm		# 2 mm * 4 sheets 
+/gate/CollB/placement/setTranslation 	0 0 39 mm	# Z: 43 ~ 43-8 /2 = 39
+/gate/CollB/setMaterial 		Lead		# Lead Collimator
+/gate/CollB/vis/setColor red
+#/gate/CollB/vis/forceSolid
+/gate/CollB/vis/forceWireframe
+
+#####################################
+# 3) Repeat Bottom collimator (2 mm slit distance)
+#####################################
+/gate/CollB/repeaters/insert cubicArray
+/gate/CollB/cubicArray/setRepeatNumberX 2
+/gate/CollB/cubicArray/setRepeatNumberY 1
+/gate/CollB/cubicArray/setRepeatNumberZ 1
+/gate/CollB/cubicArray/setRepeatVector 124 0 0 mm  # 
+/gate/CollB/cubicArray/autoCenter true
+
+#####################################
+# 4) Make both side Collimator 
+#####################################
+/gate/world/daughters/name FanBeamModuleSide
+/gate/world/daughters/insert box
+/gate/FanBeamModuleSide/geometry/setXLength 2 mm	# (2 mm septa x 2) + (2mm slit)
+/gate/FanBeamModuleSide/geometry/setYLength 173 mm	# same as above
+/gate/FanBeamModuleSide/geometry/setZLength 50 mm	# 50 mm height
+/gate/FanBeamModuleSide/placement/setTranslation 	0 0 111 mm  	# +86 ~ 86+50 / 2
+/gate/FanBeamModuleSide/setMaterial 	Lead
+/gate/FanBeamModuleSide/vis/setColor red
+/gate/FanBeamModuleSide/vis/forceWireframe
+#####################################
+# 5) Repeat Side collimator (2 mm slit distance)
+#####################################
+/gate/FanBeamModuleSide/repeaters/insert cubicArray
+/gate/FanBeamModuleSide/cubicArray/setRepeatNumberX 2
+/gate/FanBeamModuleSide/cubicArray/setRepeatNumberY 1
+/gate/FanBeamModuleSide/cubicArray/setRepeatNumberZ 1
+/gate/FanBeamModuleSide/cubicArray/setRepeatVector 4 0 0 mm  
+/gate/FanBeamModuleSide/cubicArray/autoCenter true
+
+#####################################
+# 6) Make a slit to the side collimator
+#####################################
+/gate/world/daughters/name 	slit
+/gate/world/daughters/insert 	box
+/gate/slit/geometry/setXLength 2 mm		# 2mm slit
+/gate/slit/geometry/setYLength 173 mm		# same as above
+/gate/slit/geometry/setZLength 50 mm		# same as above
+/gate/slit/placement/setTranslation 	0 0 111 mm	
+/gate/slit/setMaterial 		Air
+/gate/slit/vis/setColor white
+#/gate/slit/vis/forceSolid
+/gate/slit/vis/forceWireframe
+
+#####################################
+# 6) Create a "gap" volume to attach phasespace
+#####################################
+/gate/slit/daughters/name 	gap
+/gate/slit/daughters/insert 	box
+/gate/gap/geometry/setXLength 2 mm	# slit 2 mm
+/gate/gap/geometry/setYLength 173 mm
+/gate/gap/geometry/setZLength 0.001 mm	# 1 um air
+/gate/gap/placement/setTranslation 	0 0 24.9995 mm	# Z: 25 ~ (25-0.001=24.999) /2 = 24.9995
+/gate/gap/setMaterial 		Air		
+/gate/gap/vis/setColor yellow
+/gate/gap/vis/forceSolid
+
+#==============================================================================================
+# Beam Line Geometry   
+#==============================================================================================
+# Volume to display the physical source
+/gate/FanBeamModuleUp/daughters/name 			source_volume
+/gate/FanBeamModuleUp/daughters/insert 			cylinder
+/gate/source_volume/geometry/setRmin 		0. mm
+/gate/source_volume/geometry/setRmax 		0.5 mm
+/gate/source_volume/geometry/setHeight 	0.1 mm
+/gate/source_volume/placement/setTranslation 	0 0 -42.95 mm  # -43 ~ (-43+0.1) /2 = -42.95
+/gate/source_volume/setMaterial 		Air
+/gate/source_volume/vis/forceWireframe
+/gate/source_volume/vis/setColor 		blue
+
+
