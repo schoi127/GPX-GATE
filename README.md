@@ -29,7 +29,7 @@
 - 소스코드를 다운로드 받아서 실행합니다. 
 
 ```bash
-git clone https://github.com/schoi127/GATE-GTX
+git clone https://github.com/schoi127/GPX-GATE
 ```
 
 <br>
